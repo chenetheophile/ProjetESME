@@ -1,0 +1,110 @@
+$top-nav: linear-gradient(to right, #959292, #aeb2de);
+$side-nav: #D1BA95;
+
+mat-toolbar {
+    background: $top-nav;
+    color: white;
+    border-radius: 5px;
+}
+.mat-toolbar-single-row
+{
+    padding-left: 25px;
+}
+
+.mat-icon-button{
+    color: white;
+}
+
+mat-sidenav {
+    margin: 16px;
+    width: 200px;
+    border-right: none;
+    background-color: $side-nav;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 16px;
+}
+
+.content {
+    min-block-size: calc(100vh - 98px);
+    font-size: 2rem;
+    overflow: hidden;
+    display: flex;
+    color: lightgray;
+    border-radius: 10px;
+    margin: 16px;
+    margin-left: 32px;
+    justify-content: center;
+    align-items: center;
+}
+
+.Notreprojet{
+    display: block;
+}
+
+mat-sidenav-container {
+    height: calc(100vh - 65px);
+}
+
+.menu-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 1rem;
+    background-color: #d1ba95;
+
+    mat-icon {
+        margin-right: 8px;
+    }
+    a{
+        color:white;
+        text-decoration: none;
+    }
+}
+
+.avatar {
+    margin-top: 16px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.name {
+    margin-top: 8px;
+    font-weight: normal;
+}
+
+.designation {
+    margin-top: 2px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+mat-divider {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    background-color: white;
+}
+
+  @media (max-width: 320px) {
+    .mat-toolbar{
+       font-size: 17px;
+    }
+  }
+/* animation: shine 3s infinite linear
+    animation-timing-function: linear;
+@keyframes shine {
+    0% {
+        background-position: 0;
+
+    }
+    60% {
+        background-position: 250px
+    }
+    100% {
+        background-position: 500px
+    }
+}*/

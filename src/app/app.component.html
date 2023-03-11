@@ -1,0 +1,54 @@
+<mat-toolbar>
+  <button mat-icon-button *ngIf="sidenav.mode === 'over'" (click)="sidenav.toggle()">
+      <mat-icon *ngIf="!sidenav.opened">
+          menu
+      </mat-icon>
+      <mat-icon *ngIf="sidenav.opened">
+          close
+      </mat-icon>
+  </button>
+  Authentification  System
+</mat-toolbar>
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav="matSidenav">
+      <img class="avatar mat-elevation-z8" src="./assets/Images/logo.png" />
+
+      <h4 class="name">Projet ESME-Sudria</h4>
+      <p class="designation">2022-2023</p>
+
+      <mat-divider></mat-divider>
+      <button mat-button class="menu-button" routerLink="/">
+          <mat-icon>home</mat-icon>
+          <span>Accueil</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/Notreprojet">
+          <mat-icon>info</mat-icon>
+          <span>Projet</span>
+      </button>
+      <button mat-button class="menu-button" routerLink="/connection">
+        <mat-icon>star</mat-icon>
+        <span>Connection</span>
+    </button>
+
+      <button mat-button class="menu-button" routerLink="/inscription">
+        <mat-icon>add_circle</mat-icon>
+        <span>Inscription</span>
+    </button>
+
+      <mat-divider></mat-divider>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+      <div class="mat-elevation-z8 content" [ngClass]="content"  >
+        <div class="content-students">
+          <app-face-students *ngIf="router.url === '/'" [faceStudent]="myFace"></app-face-students>
+          <app-face-students *ngIf="router.url === '/'" [faceStudent]="myOtherFace1"></app-face-students>
+          <app-face-students *ngIf="router.url === '/'" [faceStudent]="myOtherFace2"></app-face-students>
+          <app-face-students *ngIf="router.url === '/'" [faceStudent]="myOtherFace3"></app-face-students>
+          
+        </div>
+          <router-outlet></router-outlet>
+      </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

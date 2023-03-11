@@ -1,0 +1,55 @@
+.Title {
+    text-align: center;
+    font-family:cursive;
+    color: #6f4a09;
+    margin-top: 13px;
+}
+
+.global-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.under-section1,
+.under-section2 {
+    width: 45%;
+}
+
+.under-section1 {
+    padding-top: 15px;
+}
+
+.desc-date {
+    color: #6f4a09;
+    font-size: small;
+}
+
+.desc {
+    font-style: italic;
+    color: #D1BA95;
+    font-size: medium;
+}
+
+img {
+    width: auto;
+    height: auto;
+    width: 90%;
+    border-radius: 5px;
+}
+.btn-auth {
+    background-color: #9a9ea1;
+    color: #fff;
+    border: none;
+    padding: 5px 20px;
+    font-size: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.separation {
+    border-top: 1px solid #ddd;
+    margin: 20px auto;
+    width: 50%;
+  }
+  
